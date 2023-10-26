@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  padding-top: 60px;
+}
+
+nav {
+  height: 13vh;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #000000;
+  /* Add padding to the top and bottom */
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li {
+  position: relative;
+}
+
+nav .mainMenu li a {
+  position: relative;
+  margin-right: 50px;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  transition: 0.1s ease;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+
+nav .mainMenu li a:hover {
+  background-color: #ffffff;
+  color: black;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-facebook {
+  color: rgb(0, 110, 255);
+}
+
+.fa-twitter {
+  color: rgb(86, 154, 243);
+}
+
+.fa-instagram {
+  color: rgb(255, 0, 191);
+}
+
+.fa-linkedin {
+  color: rgb(0, 110, 255);
+}
+
+nav .logo img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* This maintains the image's aspect ratio */
+  margin-left: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#active {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 30px;
+  color: #000000;
+}
+
+@media (max-width: 800px) {
+nav{
+  height: 15vh;
+}
+nav .logo img{
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+  nav .mainMenu li {
+    margin-left: 50px;
+  }
+
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    transition: top 1s ease 0s;
+    display: none;
+  }
+
+  nav .mainMenu.show {
+    display: flex;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+    margin-top: 15px;
+  }
+}
+
+
+.document-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*We do this because the carousel needs to be 100% width 
+in order for the aspect ratio trick to work*/
+.carousel-container {
+  max-width: 1500px;
+  width: 100%;
+}
+
+/*This is the actual carousel. Overflow hidden acts as a mask*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  /*Width of image is 980px. Height is 570px.*/
+  padding-top: calc(570 / 980 * 100%);
+  overflow: hidden;
+}
+
+.carousel-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.left-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 147px;
+  cursor: pointer;
+}
+
+.left-arrow:hover {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.left-arrow:hover .chevron,
+.right-arrow:hover .chevron {
+  border-color: #e6e6e6;
+}
+
+.right-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 147px;
+  cursor: pointer;
+}
+
+.right-arrow:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.chevron {
+  width: 25px;
+  height: 25px;
+  border: solid rgba(255, 255, 255, 0.5);
+  border-width: 10px 10px 0 0;
+}
+
+.chevron.right {
+  transform: rotate(45deg);
+}
+
+.chevron.left {
+  transform: rotate(-135deg);
+}
+
+.circle-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+}
+
+.circle {
+  border: 1px solid white;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.circle-fill {
+  background-color: white;
+}
+
+.text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  bottom: 45px;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+}
+
+.text-container p:nth-child(1) {
+  margin: 10px 100px;
+  font-size: 1.5em;
+}
+
+.text-container p:nth-child(2) {
+  margin: 10px 100px 20px 100px;
+}
+
+.carousel-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Animations */
+@keyframes toRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes comeRight {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes comeLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
