@@ -40,48 +40,44 @@
         </ul>
     </nav>
 
-<section>
-  
-  <div class="document-center">
-      <!--This carousel-container only exists so we can do the 
-      aspect ratio tricks in CSS-->
-      <div class="carousel-container">
-        <div class="carousel" id="carousel-1" auto-scroll="7000">
-          <!--The uppermost screen will appear first. This is due to JavaScript-->
-          <section class="carousel-screen">
-            <img src="images/programming-1873854.png" alt="Chicago Band" />
-            <section class="text-container">
-              <p>Chicago</p>
-              <p>Thank you, Chicago!</p>
-            </section>
-          </section>
-          <section class="carousel-screen">
-            <img src="images/programming-1873854.png" alt="New York" />
-            <section class="text-container">
-              <p>New York</p>
-              <p>We love the Big Apple!</p>
-            </section>
-          </section>
-          <section class="carousel-screen">
-            <img src="images/programming-1873854.png" alt="Los Angeles" />
-            <section class="text-container">
-              <p>Los Angeles</p>
-              <p>LA is always so much fun!</p>
-            </section>
-          </section>
-      
-          <div class="left-arrow">
-            <span class="chevron left"></span>
-          </div>
-          <div class="right-arrow">
-            <span class="chevron right"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-  </section>
+    <section class="herosection">
 
+
+    
+    
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/programming-1873854.png" style="width:100%">
+    <div class="text"> Your One-Stop Destination <br> for Web & AI Excellence</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/programming-1873854.png" style="width:100%">
+    <div class="text">Shaping Tomorrow's Digital World Today</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/programming-1873854.png" style="width:100%">
+    <div class="text">lorem Ispum</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+    </section>
 
     <script src="js/script.js"></script>
     </body>
