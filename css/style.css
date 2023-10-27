@@ -131,7 +131,7 @@ nav .logo img{
   nav .mainMenu {
     height: 95vh;
     position: fixed;
-    top: 0;
+    top: 10;
     right: 0;
     left: 0;
     z-index: 5;
