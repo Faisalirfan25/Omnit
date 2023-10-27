@@ -118,7 +118,7 @@ nav .logo img {
 
 @media (max-width: 800px) {
 nav{
-  height: 15vh;
+  height: 13vh;
 }
 nav .logo img{
   margin-bottom: 10px;
