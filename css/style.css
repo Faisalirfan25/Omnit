@@ -252,6 +252,17 @@ nav .logo img{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 550px) {
+  .slideshow-container{
+    height:50vh;
+  }
+  .mySlides {
+    height:50vh;
+  }
+  /* Slideshow container */
+  .slideshow-container img {
+      height:50vh;
+  
+  }
   .prev, .next, .text {
     font-size: 11px;
   }
