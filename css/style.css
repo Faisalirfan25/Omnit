@@ -22,7 +22,6 @@ body::-webkit-scrollbar {
 
 nav {
   height: 13vh;
-  background: #000000;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -33,7 +32,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #000000;
+  background: #053B50;
   /* Add padding to the top and bottom */
 }
 
@@ -112,7 +111,7 @@ nav .logo img {
   background-color: #ffffff;
   padding: 15px;
   border-radius: 30px;
-  color: #000000;
+  color: #053B50;
 }
 
 @media (max-width: 800px) {
@@ -137,7 +136,7 @@ nav .logo img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000000;
+    background: #053B50;
     transition: top 1s ease 0s;
     display: none;
   }
@@ -159,7 +158,7 @@ nav .logo img {
 
   nav .mainMenu li a:hover {
     background: #ffffff;
-    color: #000000;
+    color: #053B50;
   }
 
   .icons i {
@@ -281,7 +280,7 @@ nav .logo img {
 .welcome {
   width: 50%;
 
-  background-color: rgb(0, 0, 0);
+  background-color: #053B50;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -311,12 +310,13 @@ nav .logo img {
 }
 
 .services {
+  color: black;
   width: 50%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-color: rgb(48, 48, 48);
+  background-color: ffff;
   padding: 10px;
 }
 
