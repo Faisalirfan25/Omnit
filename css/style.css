@@ -171,7 +171,7 @@ nav .logo img {
 
 /* Add CSS styles for the sliding animation */
 .herosection {
-  margin-top: 25px;
+  
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -267,48 +267,133 @@ nav .logo img {
   }
 }
 
+
+
+
 #about {
   height: 600px;
   margin-top: -7px;
-  display: flex; /* Use flex to place .welcome and .services on the same line */
+  display: flex;
+  flex-wrap: wrap; 
+  color: white;/* Added to allow flex items to wrap on smaller screens */
 }
 
 .welcome {
-  display: flex;
   width: 50%;
-  height: 500px;
+
   background-color: rgb(0, 0, 0);
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  flex-direction: column;
 }
+
 .welcome p {
   font-size: 1rem;
   margin: 10px;
 }
+
 .welcome button {
-  columns: black;
   background-color: #ffffff;
-  font-family: "Poppims", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 10px;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.2s;
 }
+
 .welcome button:hover {
   padding: 15px;
 }
 
 .services {
   width: 50%;
-
-  height: 500px;
-  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(48, 48, 48);
+  padding: 10px;
 }
-.services .Ai{
-  color: black;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.container-item {
+  text-align: center;
+}
+
+.container-item img {
+  height: 50px;
+  width: 50px;
+}
+
+@media only screen and (max-width: 550px) {
+  #about {
+    height: 1100px;
+    margin-top: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .welcome {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+  }
+  .welcome h1{
+    font-size: 2rem;
+  }
+  .welcome p{
+    font-size: 1rem;
+  }
+
+  .services {
+    height: 70%;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Add this animation keyframes definition */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the scroll-animation class */
+.scroll-animation {
+  animation: fade-in 1s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0; /* Set initial opacity to 0 to start hidden */
+}
+/* Define the animation */
+@keyframes text-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the "text-animation" class */
+.text-animation {
+  animation: text-fade-in 1s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0; /* Set initial opacity to 0 to start hidden */
 }

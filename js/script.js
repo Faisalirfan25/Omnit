@@ -54,3 +54,37 @@ function showSlides(n) {
 setInterval(function () {
   plusSlides(1); // Call plusSlides with 1 to move to the next slide
 }, 5000); // Change slide every 3 seconds
+
+
+
+
+ $(document).ready(function() {
+    var $animationElements = $('.scroll-animation');
+    var $window = $(window);
+
+    function checkIfInView() {
+      var windowHeight = $window.height();
+      var windowTopPosition = $window.scrollTop();
+      var windowBottomPosition = windowTopPosition + windowHeight;
+
+      $animationElements.each(function() {
+        var $element = $(this);
+        var elementHeight = $element.outerHeight();
+        var elementTopPosition = $element.offset().top;
+        var elementBottomPosition = elementTopPosition + elementHeight;
+
+        // Check if the element is in the viewport
+        if (
+          elementBottomPosition >= windowTopPosition &&
+          elementTopPosition <= windowBottomPosition
+        ) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
+
+    $window.on('scroll resize', checkIfInView);
+    $window.trigger('scroll');
+  });
