@@ -422,6 +422,7 @@ nav .logo img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .ag-format-container {
   margin-top: -100px;
