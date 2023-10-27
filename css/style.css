@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   margin: 0;
   background-color: #ffffff;
   padding-top: 60px;
   overflow: hidden;
   overflow-y: scroll; /* Add the ability to scroll */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -53,7 +52,7 @@ nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   font-size: 18px;
   transition: 0.1s ease;
@@ -117,13 +116,13 @@ nav .logo img {
 }
 
 @media (max-width: 800px) {
-nav{
-  height: 15vh;
-}
-nav .logo img{
-  margin-bottom: 10px;
-  margin-left: 0px;
-}
+  nav {
+    height: 15vh;
+  }
+  nav .logo img {
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
   nav .mainMenu li {
     margin-left: 50px;
   }
@@ -170,15 +169,12 @@ nav .logo img{
   }
 }
 
-
 /* Add CSS styles for the sliding animation */
 .herosection {
   margin-top: 25px;
   overflow: hidden;
   position: relative;
   width: 100%;
-
- 
 }
 
 .mySlides {
@@ -194,7 +190,8 @@ nav .logo img{
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -216,13 +213,14 @@ nav .logo img{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(40, 35, 35, 0.8);
 }
 
 /* Caption text */
 .text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bolder;
   color: #ffffff;
   font-size: 50px;
@@ -252,18 +250,65 @@ nav .logo img{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 550px) {
-  .slideshow-container{
-    height:50vh;
+  .slideshow-container {
+    height: 50vh;
   }
   .mySlides {
-    height:50vh;
+    height: 50vh;
   }
   /* Slideshow container */
   .slideshow-container img {
-      height:50vh;
-  
+    height: 50vh;
   }
-  .prev, .next, .text {
+  .prev,
+  .next,
+  .text {
     font-size: 11px;
   }
+}
+
+#about {
+  height: 600px;
+  margin-top: -7px;
+  display: flex; /* Use flex to place .welcome and .services on the same line */
+}
+
+.welcome {
+  display: flex;
+  width: 50%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  flex-direction: column;
+}
+.welcome p {
+  font-size: 1rem;
+  margin: 10px;
+}
+.welcome button {
+  columns: black;
+  background-color: #ffffff;
+  font-family: "Poppims", sans-serif;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.welcome button:hover {
+  padding: 15px;
+}
+
+.services {
+  width: 50%;
+
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+.services .Ai{
+  color: black;
 }
