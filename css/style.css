@@ -186,6 +186,7 @@ nav .logo img{
   width: 100%;
   transition: transform 1s;
   transform: translateX(0);
+
 }
 
 /* Slideshow container */
@@ -253,6 +254,9 @@ nav .logo img{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 550px) {
 .slideshow-container{
+  height:50vh;
+}
+.mySlides {
   height:50vh;
 }
   .prev, .next, .text {
