@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 
 nav {
   height: 13vh;
-  color: #ffffff;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +32,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #053B50;
+  background: #ffff;
   /* Add padding to the top and bottom */
 }
 
@@ -52,7 +52,7 @@ nav .mainMenu li a {
   padding: 15px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
   transition: 0.1s ease;
   font-style: normal;
@@ -62,8 +62,8 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-  background-color: #ffffff;
-  color: black;
+  background-color: #053B50;
+  color: white;
   padding: 15px;
   border-radius: 30px;
 }
@@ -99,7 +99,7 @@ nav .mainMenu .closeMenu,
 }
 
 nav .logo img {
-  width: 100px; /* Adjust the width as needed */
+  width: 120px; /* Adjust the width as needed */
   height: auto; /* This maintains the image's aspect ratio */
   margin-left: 35px;
   margin-top: 20px;
@@ -108,10 +108,10 @@ nav .logo img {
 }
 
 #active {
-  background-color: #ffffff;
+  background-color: #053B50;
   padding: 15px;
   border-radius: 30px;
-  color: #053B50;
+  color: white;
 }
 
 @media (max-width: 800px) {
@@ -280,8 +280,7 @@ nav .logo img {
 .welcome {
   width: 50%;
 
-  background-color: #053B50;
-  color: #ffffff;
+  color: black;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
@@ -296,7 +295,8 @@ nav .logo img {
 }
 
 .welcome button {
-  background-color: #ffffff;
+  background-color: #053B50;
+  color: white;
   font-family: "Poppins", sans-serif;
   padding: 10px;
   border-radius: 50px;
@@ -310,7 +310,9 @@ nav .logo img {
 }
 
 .services {
-  color: black;
+  background-color: #053B50;
+
+  color: #fff;
   width: 50%;
   display: flex;
   flex-direction: column;
