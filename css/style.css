@@ -259,6 +259,11 @@ nav .logo img{
 .mySlides {
   height:50vh;
 }
+/* Slideshow container */
+.slideshow-container img {
+    height:50vh;
+
+}
   .prev, .next, .text {
     font-size: 11px;
   }
