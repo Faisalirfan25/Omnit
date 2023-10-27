@@ -484,6 +484,9 @@ nav .logo img {
   z-index: 2;
   position: relative;
 }
+.ag-courses-item_title p{
+  font-size: 15px;
+}
 .ag-courses-item_date-box {
   font-size: 18px;
   color: #FFF;
@@ -544,6 +547,7 @@ nav .logo img {
     font-size: 24px;
   }
 
+
   .what{
     font-size: 2rem;
   margin-top: 80px;
@@ -553,12 +557,13 @@ nav .logo img {
 @media only screen and (max-width: 767px) {
   .ag-format-container {
     width: 96%;
+    margin-top:100px ;
   }
 
 }
 @media only screen and (max-width: 639px) {
   .ag-format-container {
-    margin-top: 600px;}
+    margin-top: 900px;}
   .ag-courses_item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
