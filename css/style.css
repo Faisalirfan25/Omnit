@@ -564,7 +564,7 @@ nav .logo img {
 }
 @media only screen and (max-width: 639px) {
   .ag-format-container {
-    margin-top: 900px;}
+    margin-top: 10px;}
   .ag-courses_item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
