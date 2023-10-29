@@ -62,7 +62,7 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-  background-color: #053B50;
+  background-color: #053b50;
   color: white;
   padding: 15px;
   border-radius: 30px;
@@ -108,7 +108,7 @@ nav .logo img {
 }
 
 #active {
-  background-color: #053B50;
+  background-color: #053b50;
   padding: 15px;
   border-radius: 30px;
   color: white;
@@ -136,7 +136,7 @@ nav .logo img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #053B50;
+    background: #053b50;
     transition: top 1s ease 0s;
     display: none;
   }
@@ -158,7 +158,7 @@ nav .logo img {
 
   nav .mainMenu li a:hover {
     background: #ffffff;
-    color: #053B50;
+    color: #053b50;
   }
 
   .icons i {
@@ -170,7 +170,6 @@ nav .logo img {
 
 /* Add CSS styles for the sliding animation */
 .herosection {
-  
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -266,15 +265,12 @@ nav .logo img {
   }
 }
 
-
-
-
 #about {
   height: 600px;
   margin-top: -7px;
   display: flex;
-  flex-wrap: wrap; 
-  color: white;/* Added to allow flex items to wrap on smaller screens */
+  flex-wrap: wrap;
+  color: white; /* Added to allow flex items to wrap on smaller screens */
 }
 
 .welcome {
@@ -295,7 +291,7 @@ nav .logo img {
 }
 
 .welcome button {
-  background-color: #053B50;
+  background-color: #053b50;
   color: white;
   font-family: "Poppins", sans-serif;
   padding: 10px;
@@ -310,7 +306,7 @@ nav .logo img {
 }
 
 .services {
-  background-color: #053B50;
+  background-color: #053b50;
 
   color: #fff;
   width: 50%;
@@ -350,10 +346,10 @@ nav .logo img {
     width: 100%;
     text-align: center;
   }
-  .welcome h1{
+  .welcome h1 {
     font-size: 2rem;
   }
-  .welcome p{
+  .welcome p {
     font-size: 1rem;
   }
 
@@ -399,24 +395,22 @@ nav .logo img {
   animation-fill-mode: forwards;
   opacity: 0; /* Set initial opacity to 0 to start hidden */
 }
-.what{
+.what {
   margin-top: 150px;
   text-align: center;
   font-size: 4rem;
-  color: #053B50;
-  font-family:'Poppims',sans-serif ;
-
+  color: #053b50;
+  font-family: "Poppims", sans-serif;
 }
 
 :root {
   --card-height: 300px;
-  --card-width: calc(var(--card-height) / 1.5); 
+  --card-width: calc(var(--card-height) / 1.5);
 }
 
-#offer{
+#offer {
   margin-top: 20px;
   width: 100vw;
-  height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -424,12 +418,14 @@ nav .logo img {
   align-items: center;
   flex-wrap: wrap;
 }
+.heading hr {
+  color: #000000;
+  margin-top: 10px;
+}
 .ag-format-container {
-  margin-top: -100px;
+  margin-top: 50px;
   width: 1142px;
 }
-
-
 
 .ag-courses_box {
   display: -webkit-box;
@@ -456,7 +452,7 @@ nav .logo img {
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
-  background-color:#053B50;
+  background-color: #053b50;
 
   overflow: hidden;
 
@@ -465,7 +461,7 @@ nav .logo img {
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_date {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 .ag-courses-item_link:hover .ag-courses-item_bg {
   -webkit-transform: scale(10);
@@ -480,17 +476,17 @@ nav .logo img {
 
   font-weight: bold;
   font-size: 30px;
-  color: #FFF;
+  color: #fff;
 
   z-index: 2;
   position: relative;
 }
-.ag-courses-item_title p{
+.ag-courses-item_title p {
   font-size: 15px;
 }
 .ag-courses-item_date-box {
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
 
   z-index: 2;
   position: relative;
@@ -499,9 +495,9 @@ nav .logo img {
   font-weight: bold;
   color: #f9b234;
 
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 .ag-courses-item_bg {
   height: 128px;
@@ -515,9 +511,9 @@ nav .logo img {
 
   border-radius: 50%;
 
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
   background-color: #3ecd5e;
@@ -535,11 +531,10 @@ nav .logo img {
   background-color: #4c49ea;
 }
 
-
-
-@media only screen and (max-width: 979px) {
+@media only screen and (max-width: 1100px) {
   .ag-format-container {
-    margin-top: 250px;}
+    margin-top: 50px;
+  }
   .ag-courses_item {
     -ms-flex-preferred-size: calc(50% - 30px);
     flex-basis: calc(50% - 30px);
@@ -548,23 +543,23 @@ nav .logo img {
     font-size: 24px;
   }
 
-
-  .what{
+  .what {
     font-size: 2rem;
-  margin-top: 80px;
+    margin-top: 80px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 850px) {
+  #offer {
+    margin-top: 100px;
+  }
   .ag-format-container {
     width: 96%;
-    margin-top:100px ;
+    margin-top: 50px;
   }
-
-}
-@media only screen and (max-width: 639px) {
   .ag-format-container {
-    margin-top: 10px;}
+    margin-top: 10px;
+  }
   .ag-courses_item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -581,4 +576,94 @@ nav .logo img {
   .ag-courses-item_date-box {
     font-size: 16px;
   }
+}
+
+@media only screen and (max-width: 520px) {
+  #offer {
+    margin-top: 0;
+  }
+  .ag-format-container {
+    margin-top: 10px;
+  }
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+
+.what2 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 4rem;
+  color: #053b50;
+  font-family: "Poppims", sans-serif;
+}
+.heading2 hr {
+  color:#053b50;
+  margin-top: 10px;
+  width: 30%;
+margin: auto;}
+
+#choose {
+  margin-top: 50px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ #choose .section1{
+  width: 33.33%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+#choose .section2{
+  width: 33.33%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #ffffff;
+}
+.section2 .client-img{
+height: 400px;
+width: 400px;
+}
+#choose .section3{
+  width: 33.33%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.container-item2 {
+  text-align: center;
+}
+
+.container-item2 img {
+  height: 50px;
+  width: 50px;
 }
