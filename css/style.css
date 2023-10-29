@@ -638,11 +638,30 @@ margin: auto;}
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
-  background-color: #ffffff;
+  background-color: #ffdcdc;
 }
 .section2 .client-img{
 height: 400px;
 width: 400px;
+}
+
+.undpic{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.undpic button{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  background-color: #053b50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: none;
+transition: .1s ease;
+}
+.undpic button:hover{
+  padding: 15px;
 }
 #choose .section3{
   width: 33.33%;
@@ -666,4 +685,17 @@ width: 400px;
 .container-item2 img {
   height: 50px;
   width: 50px;
+}
+/* For smaller screens */
+@media (max-width: 768px) {
+  #choose {
+    height: auto;
+    flex-direction: column;
+  }
+
+  #choose .section1, #choose .section2, #choose .section3 {
+    width: 100%;
+  }
+
+ 
 }
