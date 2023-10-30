@@ -651,14 +651,14 @@ width: 400px;
 }
 
 .undpic button{
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.2rem;
   background-color: #053b50;
   color: #fff;
   padding: 10px;
   border-radius: 50px;
   box-shadow: none;
-transition: .1s ease;
+transition: .2s ease;
 }
 .undpic button:hover{
   padding: 15px;
@@ -686,16 +686,34 @@ transition: .1s ease;
   height: 50px;
   width: 50px;
 }
-/* For smaller screens */
+/* Your existing styles */
+
 @media (max-width: 768px) {
-  #choose {
-    height: auto;
-    flex-direction: column;
+  #choose .section1,
+  #choose .section2,
+  #choose .section3 {
+    width: 100%; /* Change the width to 100% for each section on smaller screens */
   }
 
-  #choose .section1, #choose .section2, #choose .section3 {
-    width: 100%;
+  .section2 .client-img {
+    height: auto; /* Allow the height to adjust automatically */
+    flex-direction: column; /* Display the content in a column */
+  }
+  
+  .undpic {
+    text-align: center; /* Center the text content */
+    padding: 20px; /* Add some padding for better readability */
   }
 
- 
+  .undpic button {
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Center the button */
+  }
+
+  #choose .section1,
+  #choose .section2,
+  #choose .section3 {
+    height: auto; /* Allow the sections to adjust their height */
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
 }
