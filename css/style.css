@@ -687,7 +687,15 @@ transition: .2s ease;
 }
 /* Your existing styles */
 
-@media (max-width: 768px) {
+/* Add this code at the end of your CSS */
+
+@media only screen and (max-width: 768px) {
+  .section2 .client-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
   #choose .section1,
   #choose .section2,
   #choose .section3 {
@@ -695,7 +703,9 @@ transition: .2s ease;
   }
 
   .section2 .client-img {
-    height: auto; /* Allow the height to adjust automatically */
+    height: auto;
+    width: 100%;
+    /* Allow the height to adjust automatically */
     flex-direction: column; /* Display the content in a column */
   }
   
@@ -730,14 +740,12 @@ transition: .2s ease;
 
 
 
-
 #contact {
   margin-top: 170px;
   display: flex;
   flex-wrap: wrap;
   color: white; /* Added to allow flex items to wrap on smaller screens */
 }
-
 .contacts{
   width: 50%;
 background-color: #053B50;
@@ -772,26 +780,6 @@ background-color: #053B50;
   flex-direction: column;
   align-items: center;
 }
-
-.form-row {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.form-row input {
-  margin: 5px;
-  padding: 8px;
-  width: 250px;
-  height: 50px;
-}
-
-.form-row select {
-  margin: 5px;
-  padding: 8px;
-  width: 250px;
-  height: 50px;
-}
 #servicess{
   margin: 5px;
   padding: 8px;
@@ -822,17 +810,32 @@ button:hover {
 }
 
 
+.form-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* Allows the items to wrap to the next line */
+}
+
+.form-row input,
+.form-row select {
+  margin: 5px;
+  padding: 8px;
+  width: 250px;
+  height: 50px;
+}
+
 
 
 @media only screen and (max-width: 550px) {
   #conatct {
-    height: 1200px;
-    margin-top: -100px;
+    height: auto;
     flex-direction: column;
     width: 100%;
   }
   .contacts {
-    height: auto;
+    margin-top: -100px;
+    height: 500px;
     width: 100%;
     text-align: center;
   }
@@ -847,10 +850,20 @@ button:hover {
     padding: 15px 20px;
   }
   
+  .form-row {
+    flex-direction: column; /* Display each input in a new line on smaller screens */
+    align-items: center;
+  }
 
+  .form-row input,
+  .form-row select {
+    width: 100%; /* Full width for smaller screens */
+    margin: 5px 0; /* Adjust margin for better spacing */
+  }
   .contpic {
 height: auto;
     width: 100%;
     text-align: center;
   }
 }
+
