@@ -937,13 +937,13 @@ height: auto;
   font-size: 35px;
   font-weight: 700;
   line-height: 48px;
-  color: rgb(0, 135, 177);
+  color: #053b50;
   margin: 0 0 10px 0;
 }
 
 .section-subhead-text {
   font-size: 25px;
-  color: rgb(153, 153, 153);
+  color: #053b50;
   line-height: 35px;
   max-width: 470px;
   text-align: center;
@@ -972,7 +972,7 @@ height: auto;
 .name {
   font-size: 25px;
   font-weight: 700;
-  color: rgb(102, 102, 102);
+  color: #053b50;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 5px;
@@ -982,7 +982,7 @@ height: auto;
 .position {
   font-size: 25px;
   font-weight: 700;
-  color: rgb(0, 135, 177);
+  color: #053b50;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 50px;
