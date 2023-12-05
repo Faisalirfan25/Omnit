@@ -365,12 +365,13 @@
 
     <div class="form">
       <div class="form-row">
+        <form action="https://sheetdb.io/api/v1/crfl0nqjahsw7" method="post" id="sheetdb-form">
         <input type="email" placeholder="Email" name="Email" style="border-radius: 30px;">
         <input type="text" placeholder="Full Name" name="Name" style="border-radius: 30px;">
       </div>
       <div class="form-row">
-        <input type="tel" placeholder="Contact No" style="border-radius: 30px;">
-        <select name="Services" id="servicess " style="border-radius: 30px;">
+        <input type="tel" placeholder="Contact No" name="Contact" style="border-radius: 30px;">
+        <select id="services"  name="Service" style="border-radius: 30px;">
           <option value="" disabled selected hidden>Services</option>
           <option value="AI / ML">AI / ML</option>
           <option value="DATA ANALYTICS">DATA ANALYTICS</option>
@@ -378,11 +379,50 @@
           <option value="APP DEVELOPMENT">APP DEVELOPMENT</option>
           <option value="UI / UX">UI / UX</option>
           <option value="GRAPHIC DESIGNING">GRAPHIC DESIGNING</option>
-        </select>
-        
+        </select><br>
+        <button type="submit">Submit</button>
+      </form>
 
       </div>
-      <button>Submit</button>
+
+      <div class="popup-container" id="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <h2>Thank you for Joining the Waitlist!</h2>
+            <p>You will receive the Ebook shortly.</p>
+            <button class="popup-close-button" onclick="closePopupAndRefresh()">Close</button>
+        </div>
+    </div>
+
+    <script>
+      var form = document.getElementById('sheetdb-form');
+      form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          fetch(form.action, {
+              method: "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(function (response) {
+              response.json().then(function () {
+                  // Show the popup
+                  var popup = document.getElementById('popup');
+                  popup.style.display = "flex";
+              });
+          });
+          // Prevent the default form submission action
+          return false;
+      });
+  
+      // Function to close the popup and refresh the page
+      function closePopupAndRefresh() {
+          var popup = document.getElementById('popup');
+          popup.style.display = "none";
+          // Refresh the page
+          location.reload();
+          // Prevent the default button behavior
+          return false;
+      }
+  </script>
+      
     </div>
   </div>
 
