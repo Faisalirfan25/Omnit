@@ -1201,6 +1201,7 @@ body {
     .popup-container {
       display: none;
       position: fixed;
+      margin: auto;
       top: 0;
       left: 0;
       width: 100%;
@@ -1230,10 +1231,17 @@ body {
 /* Close button style */
 .popup-close-button {
 margin-top:10px;
-background-color: #303339;
+background-color:#053B50;
 color: #fff;
 border: none;
 padding: 10px 20px;
 border-radius: 5px;
 cursor: pointer;
+}
+.popup-close-button:hover{
+  background-color: #053B50;
+  
+  padding: 10px 20px;
+
+
 }

@@ -45,7 +45,7 @@
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="images/slider1.jpg" style="width:100%">
-          <div class="text"> Your One-Stop Destination <br> for Web & AI Excellence</div>
+          <div class="text"> Your Destination for Digital Brilliance and AI Mastery</div>
         </div>
         <div class="mySlides fade">
           <img src="images/slider2.jpg" style="width:100%">
@@ -363,75 +363,75 @@
       whether you have questions, project ideas, or seek clarification. <br> Feel free to contact us
       anytime, and let us turn your aspirations into reality.</p>
 
-    <div class="form">
-      <div class="form-row">
-        <form action="https://sheetdb.io/api/v1/crfl0nqjahsw7" method="post" id="sheetdb-form">
-        <input type="email" placeholder="Email" name="Email" style="border-radius: 30px;">
-        <input type="text" placeholder="Full Name" name="Name" style="border-radius: 30px;">
+      <div class="form">
+        <div class="form-row">
+            <form action="https://sheetdb.io/api/v1/crfl0nqjahsw7" method="post" id="sheetdb-form">
+                <input type="email" placeholder="Email" name="Email" style="border-radius: 30px;">
+                <input type="text" placeholder="Full Name" name="Name" style="border-radius: 30px;">
+            </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Contact No" name="Contact" style="border-radius: 30px;">
+                <select id="services" name="Service" style="border-radius: 30px;">
+                    <option value="" disabled selected hidden>Services</option>
+                    <option value="AI / ML">AI / ML</option>
+                    <option value="DATA ANALYTICS">DATA ANALYTICS</option>
+                    <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
+                    <option value="APP DEVELOPMENT">APP DEVELOPMENT</option>
+                    <option value="UI / UX">UI / UX</option>
+                    <option value="GRAPHIC DESIGNING">GRAPHIC DESIGNING</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+         
+        
+      <div class="contpic">
+        <img src="images/pexels-mikhail-nilov-7731355.jpg" alt="">
       </div>
-      <div class="form-row">
-        <input type="tel" placeholder="Contact No" name="Contact" style="border-radius: 30px;">
-        <select id="services"  name="Service" style="border-radius: 30px;">
-          <option value="" disabled selected hidden>Services</option>
-          <option value="AI / ML">AI / ML</option>
-          <option value="DATA ANALYTICS">DATA ANALYTICS</option>
-          <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
-          <option value="APP DEVELOPMENT">APP DEVELOPMENT</option>
-          <option value="UI / UX">UI / UX</option>
-          <option value="GRAPHIC DESIGNING">GRAPHIC DESIGNING</option>
-        </select><br>
-        <button type="submit">Submit</button>
-      </form>
-
-      </div>
-
+      </section>
       <div class="popup-container" id="popup">
         <div class="popup-content">
             <span class="popup-close" onclick="closePopup()">&times;</span>
             <h2>Thank you for Joining the Waitlist!</h2>
-            <p>You will receive the Ebook shortly.</p>
+            <p>You will receive the Ebook shortly.</p>
             <button class="popup-close-button" onclick="closePopupAndRefresh()">Close</button>
         </div>
     </div>
+</div>
 
-    <script>
-      var form = document.getElementById('sheetdb-form');
-      form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          fetch(form.action, {
-              method: "POST",
-              body: new FormData(document.getElementById("sheetdb-form")),
-          }).then(function (response) {
-              response.json().then(function () {
-                  // Show the popup
-                  var popup = document.getElementById('popup');
-                  popup.style.display = "flex";
-              });
-          });
-          // Prevent the default form submission action
-          return false;
-      });
-  
-      // Function to close the popup and refresh the page
-      function closePopupAndRefresh() {
-          var popup = document.getElementById('popup');
-          popup.style.display = "none";
-          // Refresh the page
-          location.reload();
-          // Prevent the default button behavior
-          return false;
-      }
-  </script>
+<script>
+    var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(document.getElementById("sheetdb-form")),
+        }).then(function (response) {
+            response.json().then(function () {
+                // Show the popup
+                var popup = document.getElementById('popup');
+                popup.style.display = "flex";
+            });
+        });
+        // Prevent the default form submission action
+        return false;
+    });
+
+    // Function to close the popup and refresh the page
+    function closePopupAndRefresh() {
+        var popup = document.getElementById('popup');
+        popup.style.display = "none";
+        // Refresh the page
+        location.reload();
+        // Prevent the default button behavior
+        return false;
+    }
+</script>
+
+      <script src="js/script.js"></script>
+      </body>
+      </html>
       
-    </div>
-  </div>
-
-  <div class="contpic">
-    <img src="images/pexels-mikhail-nilov-7731355.jpg" alt="">
-  </div>
-</section>
-
-
-    <script src="js/script.js"></script>
-    </body>
-    </html>
