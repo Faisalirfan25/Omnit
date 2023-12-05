@@ -675,6 +675,7 @@ width: 400px;
 transition: .2s ease;
 }
 .undpic button:hover{
+  background-color: #053B50;
   padding: 15px;
 }
 #choose .section3{
