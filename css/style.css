@@ -117,7 +117,7 @@ nav .logo img {
 
 @media (max-width: 800px) {
   nav {
-    height: 13vh;
+    height: 11vh;
   }
   nav .logo img {
     margin-bottom: 10px;
@@ -130,7 +130,7 @@ nav .logo img {
     color: #fff;
   }
   nav .mainMenu {
-    height: 97vh;
+    height: 95vh;
     position: fixed;
     top: 10;
     right: 0;
