@@ -117,7 +117,7 @@ nav .logo img {
 
 @media (max-width: 800px) {
   nav {
-    height: 15vh;
+    height: 13vh;
   }
   nav .logo img {
     margin-bottom: 10px;
@@ -126,9 +126,11 @@ nav .logo img {
   nav .mainMenu li {
     margin-left: 50px;
   }
-
+  nav .mainMenu li a{
+    color: #fff;
+  }
   nav .mainMenu {
-    height: 95vh;
+    height: 100vh;
     position: fixed;
     top: 10;
     right: 0;
@@ -159,7 +161,7 @@ nav .logo img {
 
   nav .mainMenu li a:hover {
     background: #ffffff;
-    color: #053b50;
+    color: #000000;
   }
 
   .icons i {
