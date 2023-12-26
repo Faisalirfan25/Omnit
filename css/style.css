@@ -234,8 +234,13 @@ nav .logo img {
   .slideshow-container img {
     height: 50vh;
   }
+  .text {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 20px;
 }
-
+}
 #about {
   height: 600px;
   margin-top: -7px;
