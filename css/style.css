@@ -846,10 +846,7 @@ button:hover {
     align-items: center;
   }
 
-  .form-row input,select {
-    width: 100%; /* Full width for smaller screens */
-    margin: 5px 0; /* Adjust margin for better spacing */
-  }
+
   .contpic {
 height: auto;
     width: 100%;
