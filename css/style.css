@@ -82,7 +82,9 @@ nav .mainMenu .closeMenu,
   display: none;
   cursor: pointer;
 }
-
+.fa-google{
+  color: #e44002;
+}
 .fa-facebook {
   color: rgb(0, 110, 255);
 }
