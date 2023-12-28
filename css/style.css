@@ -82,23 +82,23 @@ nav .mainMenu .closeMenu,
   display: none;
   cursor: pointer;
 }
-.fa-google{
-  color: #e44002;
+.fa-envelope{
+  color: #fff;
 }
 .fa-facebook {
-  color: rgb(0, 110, 255);
+  color: #fff;
 }
 
 .fa-twitter {
-  color: rgb(86, 154, 243);
+  color: #fff;
 }
 
 .fa-instagram {
-  color: rgb(255, 0, 191);
+  color: #fff;
 }
 
 .fa-linkedin {
-  color: rgb(0, 110, 255);
+  color: #fff;
 }
 
 nav .logo img {

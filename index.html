@@ -34,10 +34,9 @@
             <span class="icons">
               <a href="https://www.facebook.com/omnitenterprise"><i class="fab fa-facebook"></i></a>
               <a href="https://www.instagram.com/omnitenterprise"><i class="fab fa-instagram"></i></a>
-              <a href="https://twitter.com/omnitenterprise"><i class="fab fa-twitter"></i></a>
               <a href="https://www.linkedin.com/company/omnitenterprise/"><i class="fa-brands fa-linkedin"></i></a>
               <a class="social-icon__link" href="mailto: workwithomnit@gmail.com?subject = Feedback&body = Message">
-                <i class="fa-brands fa-google"></i></a>
+                <i class="fa-solid fa-envelope"></i></a>
             </span>
         </ul>
     </nav>
@@ -203,10 +202,10 @@
             
             <ul class="social-icon">
               <li class="social-icon__item"><a class="social-icon__link" href="mailto: hashirkhalid4@gmail.com?subject = Feedback&body = Message">
-               <i class="fa-brands fa-google"></i></a>
+                <i class="fa-solid fa-envelope" style="color: red;"></i></a>
           
               <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/hashirkhalid">
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin" style="color: blue;"></i>
                 </a></li>
           </div>
         </div>
@@ -226,10 +225,10 @@
            
             <ul class="social-icon">
               <li class="social-icon__item"><a class="social-icon__link" href="mailto: ammaralamclg@gmail.com?subject = Feedback&body = Message">
-                <i class="fa-brands fa-google"></i></a>
+                <i class="fa-solid fa-envelope" style="color: red;"></i></a>
           
               <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/ammaralam/">
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin" style="color: blue;"></i>
                 </a></li>
           </div>
         </div>
@@ -251,10 +250,10 @@
            
             <ul class="social-icon">
               <li class="social-icon__item"><a class="social-icon__link" href="mailto: syedhamzaamir.official@gmail.com?subject = Feedback&body = Message">
-                <i class="fa-brands fa-google"></i></a>
+                <i class="fa-solid fa-envelope" style="color: red;"></i></a>
           
               <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/syedhamzaamir/">
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin" style="color: blue;"></i>
                 </a></li>
               
             </ul>
@@ -357,31 +356,25 @@
               assist you, whether you have questions, project ideas, or seek clarification. <br> Feel free to
               contact us anytime, and let us turn your aspirations into reality.</p>
 
-          <div class="form">
-              <div class="form-row">
-                  <form action="https://sheetdb.io/api/v1/crfl0nqjahsw7" method="post" id="sheetdb-form">
-                      <input type="email" placeholder="Email" name="Email" style="border-radius: 30px;">
-                      <input type="text" placeholder="Full Name" name="Name" style="border-radius: 30px;">
-                  </form>
-              </div>
-              <div class="form-row">
-                  <input type="tel" placeholder="Contact No" name="Contact" style="border-radius: 30px;" style="width: 80%;" style="margin: 5px 0;">
-                  <select id="services" name="Service" style="border-radius: 30px;" style="width: 80%;"  style="margin: 5px 0;">
-                      <option value="" disabled selected hidden>Services</option>
-                      <option value="AI / ML">AI / ML</option>
-                      <option value="DATA ANALYTICS">DATA ANALYTICS</option>
-                      <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
-                      <option value="APP DEVELOPMENT">APP DEVELOPMENT</option>
-                      <option value="UI / UX">UI / UX</option>
-                      <option value="GRAPHIC DESIGNING">GRAPHIC DESIGNING</option>
-                  </select>
-              </div>
-              <div class="form-row">
-                  <button type="submit">Submit</button>
-              </div>
-          </div>
-      </div>
-  </div>
+              <div class="form">
+                <div class="form-row">
+                    <form action="https://sheetdb.io/api/v1/a9wmdpthj81mm" method="post" id="sheetdb-form">
+                        <input type="email" placeholder="Email" name="Email" style="border-radius: 30px;"><br>
+                        <input type="text" placeholder="Full Name" name="Name" style="border-radius: 30px;">
+                        <input type="tel" placeholder="Contact No" name="Contact" style="border-radius: 30px; width: 80%; margin: 5px 0;">
+                        <select id="services" name="Service" style="border-radius: 30px; width: 80%; margin: 5px 0;">
+                            <option value="" disabled selected hidden>Services</option>
+                            <option value="AI / ML">AI / ML</option>
+                            <option value="DATA ANALYTICS">DATA ANALYTICS</option>
+                            <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
+                            <option value="APP DEVELOPMENT">APP DEVELOPMENT</option>
+                            <option value="UI / UX">UI / UX</option>
+                            <option value="GRAPHIC DESIGNING">GRAPHIC DESIGNING</option>
+                        </select><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
 
   <div class="contpic">
       <img src="images/pexels-mikhail-nilov-7731355.jpg" alt="">
@@ -400,34 +393,33 @@
 </div>
 
 <script>
-    var form = document.getElementById('sheetdb-form');
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        fetch(form.action, {
-            method: "POST",
-            body: new FormData(document.getElementById("sheetdb-form")),
-        }).then(function (response) {
-            response.json().then(function () {
-                // Show the popup
-                var popup = document.getElementById('popup');
-                popup.style.display = "flex";
-            });
-        });
-        // Prevent the default form submission action
-        return false;
-    });
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+      }).then(function (response) {
+          response.json().then(function () {
+              // Show the popup
+              var popup = document.getElementById('popup');
+              popup.style.display = "flex";
+          });
+      });
+      // Prevent the default form submission action
+      return false;
+  });
 
-    // Function to close the popup and refresh the page
-    function closePopupAndRefresh() {
-        var popup = document.getElementById('popup');
-        popup.style.display = "none";
-        // Refresh the page
-        location.reload();
-        // Prevent the default button behavior
-        return false;
-    }
+  // Function to close the popup and refresh the page
+  function closePopupAndRefresh() {
+      var popup = document.getElementById('popup');
+      popup.style.display = "none";
+      // Refresh the page
+      location.reload();
+      // Prevent the default button behavior
+      return false;
+  }
 </script>
-
 
 <footer class="footer">
   <div class="waves">
@@ -450,7 +442,7 @@
       <i class="fab fa-instagram"></i>
       </a></li>
       <li class="social-icon__item"><a class="social-icon__link" href="mailto: workwithomnit@gmail.com?subject = Feedback&body = Message">
-        <i class="fa-brands fa-google"></i></a></li>
+        <i class="fa-solid fa-envelope"></i></a></li>
   </ul>
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
