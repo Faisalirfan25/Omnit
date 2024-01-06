@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 }
 
 nav {
-  height: 12vh;
+  height: 10vh;
   color: #000000;
   display: flex;
   align-items: center;
@@ -102,10 +102,10 @@ nav .mainMenu .closeMenu,
 }
 
 nav .logo img {
-  width: 120px; /* Adjust the width as needed */
+  width: 100px; /* Adjust the width as needed */
   height: auto; /* This maintains the image's aspect ratio */
   margin-left: 35px;
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -253,6 +253,7 @@ nav .logo img {
 
 .welcome {
   width: 50%;
+  background-color: #a2c0cc;
 
   color: black;
   font-family: "Poppins", sans-serif;
