@@ -699,33 +699,34 @@ transition: .2s ease;
 }
 
 
-
 #contact {
   margin-top: 170px;
   display: flex;
   flex-wrap: wrap;
   color: white; /* Added to allow flex items to wrap on smaller screens */
 }
-.contacts{
+
+.contacts {
   width: 50%;
-background-color: #053B50;
+  background-color: #053B50;
   color: black;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-.contacts h1{
+
+.contacts h1 {
   font-size: 2.5rem;
 }
-.contacts p{
+
+.contacts p {
   font-size: 1rem;
 }
-.contpic{
-  width: 50%;
 
+.contpic {
+  width: 50%;
   color: black;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -734,18 +735,21 @@ background-color: #053B50;
   align-items: center;
   font-size: 2rem;
 }
+
 .form {
-  margin-top:10px ;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#servicess{
+
+#services {
   margin: 5px;
   padding: 8px;
   width: 250px;
   height: 50px;
 }
+
 button {
   padding: 10px 20px;
   background-color: #ffffff;
@@ -762,19 +766,16 @@ button:hover {
   padding: 15px 20px;
 }
 
-
-
 .contpic img {
-  max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
-  max-height: 100%; /* Ensures the image doesn't exceed the height of its container */
+  max-width: 100%;
+  max-height: 100%;
 }
-
 
 .form-row {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  flex-wrap: wrap; /* Allows the items to wrap to the next line */
+  flex-wrap: wrap;
 }
 
 .form-row input,
@@ -785,43 +786,45 @@ button:hover {
   height: 50px;
 }
 
-
-
 @media only screen and (max-width: 550px) {
-  #conatct {
+  #contact {
     height: auto;
     flex-direction: column;
     width: 100%;
   }
+
   .contacts {
     margin-top: -100px;
     height: 600px;
     width: 100%;
     text-align: center;
   }
+
   .contacts h1 {
     font-size: 2rem;
   }
+
   .contacts p {
     font-size: 1rem;
   }
+
   button:hover {
     background-color: #ffffff;
     padding: 15px 20px;
   }
-  
+
   .form-row {
-    flex-direction: column; /* Display each input in a new line on smaller screens */
+    flex-direction: column;
     align-items: center;
   }
 
-
   .contpic {
-height: auto;
+    height: auto;
     width: 100%;
     text-align: center;
   }
 }
+
 
 
 
