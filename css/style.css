@@ -790,9 +790,13 @@ button:hover {
     flex-direction: column;
   }
   #contact {
-    height: 1000px;
+    height: 800px;
   }
-  
+  #services,
+form input,
+form select {
+  margin-top: 10px;
+}
 }
 
 
