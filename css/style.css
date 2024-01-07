@@ -793,7 +793,7 @@ button:hover {
   }
   #contact {
     height: auto;
-  margin-top: -50px;
+  margin-top: -10px;
     
   }
   #services,
@@ -806,8 +806,9 @@ form select {
   height: 800px;
 
 
-button{
-  margin-bottom: 10px;
+}
+#service button{
+  margin-bottom: 10px
 }
 
 }
