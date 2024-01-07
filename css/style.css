@@ -700,6 +700,7 @@ transition: .2s ease;
 
 
 #contact {
+  height: 800px;
   margin-top: 170px;
   color: white; /* Added to allow flex items to wrap on smaller screens */
 }
@@ -742,12 +743,14 @@ transition: .2s ease;
   align-items: center;
 }
 
-#services {
+#services,
+form input,
+form select {
   margin: 5px;
   padding: 8px;
-  width: 100%;
-  max-width: 250px;
-  height: 50px;
+  width: 80%; /* Set the width to 100% for consistent width */
+  height: 50px; /* Set the height to 50px for consistent height */
+  border-radius: 30px;
 }
 
 button {
