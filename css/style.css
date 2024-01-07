@@ -789,7 +789,9 @@ button:hover {
   .contact-container {
     flex-direction: column;
   }
-  
+  #contact {
+    height: 1000px;
+  }
   
 }
 
