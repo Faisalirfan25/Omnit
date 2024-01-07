@@ -704,10 +704,11 @@ transition: .2s ease;
   margin-top: 170px;
   display: flex;
   flex-wrap: wrap;
-  color: rgb(0, 0, 0); /* Added to allow flex items to wrap on smaller screens */
+  color: white; /* Added to allow flex items to wrap on smaller screens */
 }
 .contacts{
-  width: 100%;
+  width: 50%;
+background-color: #053B50;
   color: black;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -722,7 +723,17 @@ transition: .2s ease;
 .contacts p{
   font-size: 1rem;
 }
+.contpic{
+  width: 50%;
 
+  color: black;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
 .form {
   margin-top:10px ;
   display: flex;
@@ -737,20 +748,26 @@ transition: .2s ease;
 }
 button {
   padding: 10px 20px;
-  background-color: #053B50;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.1s ease;
-  font-size: 1rem;s
+  font-size: 1rem;
 }
 
 button:hover {
-  background-color: #053B50;
+  background-color: #ffffff;
   padding: 15px 20px;
 }
 
+
+
+.contpic img {
+  max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+  max-height: 100%; /* Ensures the image doesn't exceed the height of its container */
+}
 
 
 .form-row {
@@ -799,7 +816,11 @@ button:hover {
   }
 
 
-
+  .contpic {
+height: auto;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 
