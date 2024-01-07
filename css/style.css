@@ -792,7 +792,7 @@ button:hover {
     flex-direction: column;
   }
   #contact {
-    height: 800px;
+    height: auto;
   margin-top: -50px;
     
   }
@@ -802,6 +802,7 @@ form select {
   margin-top: 10px;
 }
 .contpic {
+  margin-top: 1px;
   height: 800px;
 
 
