@@ -700,7 +700,7 @@ transition: .2s ease;
 
 
 #contact {
-  height: 800px;
+  height: 600px;
   margin-top: 170px;
   color: white; /* Added to allow flex items to wrap on smaller screens */
 }
@@ -790,9 +790,7 @@ button:hover {
     flex-direction: column;
   }
   
-  .contpic {
-    display: none;
-  }
+  
 }
 
 
