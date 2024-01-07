@@ -726,6 +726,7 @@ transition: .2s ease;
 }
 
 .contacts p {
+  margin: 20px;
   font-size: 1rem;
 }
 
@@ -754,6 +755,7 @@ form select {
 }
 
 button {
+  margin-top: 10px;
   padding: 10px 20px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -790,7 +792,7 @@ button:hover {
     flex-direction: column;
   }
   #contact {
-    height: 800px;
+    height: 900px;
   }
   #services,
 form input,
