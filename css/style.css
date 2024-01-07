@@ -244,16 +244,16 @@ nav .logo img {
 }
 }
 #about {
-  height: 600px;
-  margin-top: -7px;
+  height: 300px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   color: white; /* Added to allow flex items to wrap on smaller screens */
 }
 
 .welcome {
-  width: 50%;
-  background-color: #a2c0cc;
+  width: 100%;
+  background-color:#fff;
 
   color: black;
   font-family: "Poppins", sans-serif;
@@ -273,55 +273,26 @@ nav .logo img {
   background-color: #053b50;
   color: white;
   font-family: "Poppins", sans-serif;
-  padding: 10px;
+  padding: 20px;
+  padding-left: 20px;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 500;
-  transition: all 0.2s;
+  transition: ease 0.1s;
 }
 
 .welcome button:hover {
-  padding: 15px;
+  padding: 20px;
 background-color:#053B50;}
 
-.services {
-  background-color: #053b50;
-
-  color: #fff;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  background-color: ffff;
-  padding: 10px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-}
-
-.container-item {
-  text-align: center;
-}
-
-.container-item img {
-  height: 50px;
-  width: 50px;
-}
 
 @media only screen and (max-width: 550px) {
   #about {
-    height: 1300px;
-    margin-top: 0;
+    margin-top: 30px;
     flex-direction: column;
     width: 100%;
   }
   .welcome {
-    height: 30%;
     width: 100%;
     text-align: center;
   }
@@ -332,11 +303,7 @@ background-color:#053B50;}
     font-size: 1rem;
   }
 
-  .services {
-    height: 70%;
-    width: 100%;
-    text-align: center;
-  }
+ 
 }
 /* Add this animation keyframes definition */
 @keyframes fade-in {
@@ -375,7 +342,7 @@ background-color:#053B50;}
   opacity: 0; /* Set initial opacity to 0 to start hidden */
 }
 .what {
-  margin-top: 150px;
+  margin-top: 50px;
   text-align: center;
   font-size: 4rem;
   color: #053b50;
@@ -388,7 +355,6 @@ background-color:#053B50;}
 }
 
 #offer {
-  margin-top: 20px;
   width: 100vw;
   margin: 0;
   display: flex;
