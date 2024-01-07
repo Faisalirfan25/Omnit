@@ -358,7 +358,7 @@ background-color:#053B50;}
   width: 100vw;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -369,7 +369,7 @@ background-color:#053B50;}
 }
 .ag-format-container {
   margin-top: 50px;
-  width: 1142px;
+  width: 100%;
 }
 /* Add this CSS to your existing style.css file or create a new one */
 
@@ -382,8 +382,8 @@ background-color:#053B50;}
 
 /* Style adjustments for each course item */
 .ag-courses_item {
-  width: 250px; /* Set a fixed width for each item */
-  margin: 10px; /* Add some margin for spacing */
+  width: 100%; /* Set a fixed width for each item */
+  margin: 10px 0; /* Add some margin for spacing */
 }
 
 .ag-courses_box {
