@@ -802,10 +802,9 @@ form select {
   margin-top: 10px;
 }
 .contacts{
-  height: 800px;
+  height: auto;
 }
 .contpic {
-  margin-top: 1px;
   height: 800px;
 
 
