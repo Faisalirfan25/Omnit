@@ -801,6 +801,9 @@ form input,
 form select {
   margin-top: 10px;
 }
+.contacts{
+  height: 800px;
+}
 .contpic {
   margin-top: 1px;
   height: 800px;
