@@ -378,9 +378,12 @@
           body: new FormData(form),
       }).then(function (response) {
           response.json().then(function () {
-              // Show the popup immediately without delay
-              var popup = document.getElementById('popup');
-              popup.style.display = "flex";
+              // Use requestAnimationFrame for immediate rendering
+              requestAnimationFrame(function () {
+                  // Show the popup immediately without delay
+                  var popup = document.getElementById('popup');
+                  popup.style.display = "flex";
+              });
           });
       });
       // Prevent the default form submission action
