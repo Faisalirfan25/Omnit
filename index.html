@@ -23,7 +23,7 @@
       <div class="logo"><a href="index.html"><img src="images/blacklog.png" alt="logo"></div></a>
       <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
-            <li><a href="index.html" id="index">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#offer">Services</a></li>
             <li><a href="#contact">Contact Us</a></li>
@@ -60,7 +60,7 @@
       </div>
     </section>
 
-    <section id="about" class="scroll-animation">
+    <section id="about">
   <div class="welcome">
     <h1>Welcome to <span style="color: #053B50;"> Omnit</span></h1>
     <p>Building digital authority: Combine stunning visuals with unparalleled
@@ -247,7 +247,7 @@
  
 <div class="section1">
     <div class="container2">
-      <div class="container-item2 text-animation">
+      <div class="container-item2">
         <img src="images/icons8-cubes-64.png" alt="Icon 1" height="50" width="50">
         <h1>Best in The Indsutry</h1>
         <p>Omnit develops well-optimized and highly scalable websites and AI/ML integrations,
@@ -257,7 +257,7 @@
     </div>
 
     <div class="container2">
-      <div class="container-item2 text-animation">
+      <div class="container-item2 ">
         <img src="images/icons8-percentage-64.png" alt="Icon 2" height="50" width="50">
         <h1>High Success Rate</h1>
         <p>Omnit’s legacy boasts a high success rate, and we’re well-equipped to handle every
@@ -267,7 +267,7 @@
     </div>
 
     <div class="container2">
-      <div class="container-item2 text-animation">
+      <div class="container-item2">
         <img src="images/icons8-best-seller-64.png" alt="Icon 3" height="50" width="50">
         <h1>Award Winning</h1>
         <p>Omnit emphasizes developing high-quality solutions for our customers, and the
@@ -290,7 +290,7 @@
 
 <div class="section3">
     <div class="container2">
-      <div class="container-item2 text-animation">
+      <div class="container-item2 ">
         <img src="images/icons8-happy-48.png" alt="Icon 1" height="50" width="50">
         <h1>100% Happy Clients</h1>
         <p>Client satisfaction is Omnit’s crown jewel, and we are committed to going the extra mile
@@ -299,7 +299,7 @@
     </div>
 
     <div class="container2">
-      <div class="container-item2 text-animation">
+      <div class="container-item2 ">
         <img src="images/icons8-team-80.png" alt="Icon 2" height="50" width="50">
         <h1>Professional Team</h1>
         <p>Omnit’s team of experts comprises vetted and seasoned professionals with extensive
@@ -308,7 +308,7 @@
     </div>
 
     <div class="container2">
-      <div class="container-item2 text-animation">
+      <div class="container-item2">
         <img src="images/icons8-customer-support-100.png" alt="Icon 3" height="100" width="100">
         <h1>24/7 customer support</h1>
         <p>Omnit’s customer support is world-class, and we know the importance of engaging
@@ -319,7 +319,7 @@
   </div>
 
 </section>
-<section id="contact" class="scroll-animation">
+<section id="contact" >
   <div class="contact-container">
     <div class="contacts">
       <div class="contact-content">
@@ -370,6 +370,7 @@
 </div>
 
 <script>
+
   var form = document.getElementById('sheetdb-form');
   form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -377,14 +378,11 @@
           method: "POST",
           body: new FormData(form),
       }).then(function (response) {
-          response.json().then(function () {
-              // Use requestAnimationFrame for immediate rendering
-              requestAnimationFrame(function () {
-                  // Show the popup immediately without delay
-                  var popup = document.getElementById('popup');
-                  popup.style.display = "flex";
-              });
-          });
+          if (response.ok) {
+              // Show the popup immediately without delay
+              var popup = document.getElementById('popup');
+              popup.style.display = "flex";
+          }
       });
       // Prevent the default form submission action
       return false;
@@ -400,6 +398,7 @@
       return false;
   }
 </script>
+
 
 
 
