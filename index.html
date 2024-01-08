@@ -378,7 +378,7 @@
           body: new FormData(form),
       }).then(function (response) {
           response.json().then(function () {
-              // Show the popup
+              // Show the popup immediately without delay
               var popup = document.getElementById('popup');
               popup.style.display = "flex";
           });
@@ -397,6 +397,7 @@
       return false;
   }
 </script>
+
 
 <footer class="footer">
   <div class="waves">
